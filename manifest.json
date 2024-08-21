@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Screenshot Extension",
+  "version": "1.0",
+  "description": "Captures screenshots and analyzes them using GPT-4 Vision",
+  "permissions": ["activeTab", "storage", "scripting", "downloads"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

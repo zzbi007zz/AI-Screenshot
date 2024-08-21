@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Screenshot Extension</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>AI Screenshot Extension</h1>
+  <div>
+    <label for="apiKey">OpenAI API Key:</label>
+    <input type="password" id="apiKey" placeholder="Enter your API key">
+    <button id="saveApiKey">Save API Key</button>
+  </div>
+  <div>
+    <label for="modelName">Model Name:</label>
+    <input type="text" id="modelName" value="gpt-4o-mini">
+  </div>
+  <button id="captureBtn">Capture Screenshot</button>
+  <div id="status"></div>
+  <div id="analysesList"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
